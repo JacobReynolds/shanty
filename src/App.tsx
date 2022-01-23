@@ -7,7 +7,7 @@ const actions = [
     title: "Find the first location of the shanty",
     href: "#",
     icon: ClockIcon,
-    description: "Description",
+    description: "Cupcake ipsum dolor sit amet muffin caramels soufflé liquorice. Topping halvah pudding sugar plum powder ice cream.",
     iconForeground: "text-teal-700",
     iconBackground: "bg-teal-50",
   },
@@ -16,7 +16,7 @@ const actions = [
     title: "Go to the coolest booth",
     href: "#",
     icon: BadgeCheckIcon,
-    description: "Description",
+    description: "Jelly-o sesame snaps gingerbread candy canes marshmallow pudding. Candy sesame snaps candy.",
     iconForeground: "text-purple-700",
     iconBackground: "bg-purple-50",
   },
@@ -25,7 +25,8 @@ const actions = [
     title: "Meet a stranger",
     href: "#",
     icon: UsersIcon,
-    description: "Description",
+    description:
+      "Lemon drops donut carrot cake dragée chocolate lemon drops. Sugar plum jelly-o cupcake caramels cake chocolate cake gummies. Candy pie icing dessert gingerbread dragée.",
     iconForeground: "text-sky-700",
     iconBackground: "bg-sky-50",
   },
@@ -34,7 +35,8 @@ const actions = [
     title: "Shake someone's hand",
     href: "#",
     icon: CashIcon,
-    description: "Description",
+    description:
+      "Liquorice tootsie roll powder apple pie bonbon dessert sugar plum. Cheesecake dessert pie muffin chocolate bar jelly beans shortbread jelly-o cotton candy. ",
     iconForeground: "text-yellow-700",
     iconBackground: "bg-yellow-50",
   },
@@ -43,16 +45,16 @@ const actions = [
     title: "Have a dance party",
     href: "#",
     icon: ReceiptRefundIcon,
-    description: "Description",
+    description: "Jelly-o cotton candy pudding chupa chups cookie muffin. Apple pie chupa chups sesame snaps jujubes caramels croissant marshmallow.",
     iconForeground: "text-rose-700",
     iconBackground: "bg-rose-50",
   },
   {
     id: 6,
-    title: "Come back to the booth",
+    title: "Pick up a piece of trash",
     href: "#",
     icon: AcademicCapIcon,
-    description: "Description",
+    description: "Jujubes dessert ice cream dessert candy canes tootsie roll topping apple pie chocolate bar. Donut lemon.",
     iconForeground: "text-indigo-700",
     iconBackground: "bg-indigo-50",
   },
@@ -83,7 +85,7 @@ function App() {
   const executeScroll = () => myRef.current?.scrollIntoView();
   return (
     <div className="App bg-gray-200 scroll-smooth">
-      <div className="min-h-screen">
+      <div className="min-h-[50vh]">
         <div className="flex w-full text-3xl font-extrabold tracking-tight  items-center text-center p-4 justify-center">
           <img className="h-[64px]  w-[64px] mr-2" src="./logo.png" />
           <h1 className="text-red-500 text-xl uppercase font-bold">Art Shanty Projects</h1>
@@ -127,13 +129,21 @@ function App() {
                   </span>
                 </div>
                 <div className="mt-8">
-                  <h3 className="text-lg font-medium">
-                    {action.title}
-                  </h3>
+                  <h3 className="text-lg font-medium">{action.title}</h3>
                   <p className="mt-2 text-sm text-gray-500">{action.description}</p>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="min-h-[50vh] mt-24">
+        <div className="bg-white">
+          <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Think you're done?</p>
+              <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">Head back to the booth!</p>
+            </div>
           </div>
         </div>
       </div>
