@@ -109,6 +109,7 @@ function App() {
       </div>
       <div id="list" className="flex justify-center cursor-pointer">
         <div className="w-full p-4 lg:w-1/2">
+          <p className="text-gray-600 text-sm italic mb-1">Complete each item by tapping or clicking</p>
           <div className="rounded-lg bg-white overflow-hidden shadow divide-y divide-white sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
             {actions.map((action, actionIdx) => (
               <div
@@ -119,8 +120,11 @@ function App() {
                   actionIdx === 1 ? "sm:rounded-tr-lg" : "",
                   actionIdx === actions.length - 2 ? "sm:rounded-bl-lg" : "",
                   actionIdx === actions.length - 1 ? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none" : "",
-                  "relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500",
-                  { "bg-green-200": actionState[action.id]?.completed }
+                  "relative group bg-white hover:bg-gray-100 transition-colors p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500",
+                  {
+                    "bg-green-200": actionState[action.id]?.completed,
+                    "hover:bg-green-300": actionState[action.id]?.completed,
+                  }
                 )}
               >
                 <div>
