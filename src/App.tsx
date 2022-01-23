@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AcademicCapIcon, BadgeCheckIcon, CashIcon, ClockIcon, ReceiptRefundIcon, UsersIcon } from "@heroicons/react/outline";
 import classNames from "classnames";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const actions = [
   {
     id: 1,
@@ -60,7 +62,6 @@ const actions = [
   },
 ];
 function App() {
-  const myRef = useRef<HTMLDivElement>(null);
   const [actionState, setActionState] = useState<any>(localStorage.getItem("actionState") ? JSON.parse(localStorage.getItem("actionState")!) : {});
 
   function completeItem(index: number) {
@@ -82,7 +83,6 @@ function App() {
     }
   }, []);
 
-  const executeScroll = () => myRef.current?.scrollIntoView();
   return (
     <div className="App bg-gray-200 scroll-smooth">
       <div className="min-h-[50vh]">
@@ -97,17 +97,17 @@ function App() {
           </h2>
           <div className="mt-8 flex justify-center">
             <div className="inline-flex rounded-md shadow">
-              <button
-                onClick={executeScroll}
+              <Link
+                to="list"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-red-800"
               >
                 Get started
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <div ref={myRef} className="flex justify-center cursor-pointer">
+      <div id="list" className="flex justify-center cursor-pointer">
         <div className="w-full p-4 lg:w-1/2">
           <div className="rounded-lg bg-white overflow-hidden shadow divide-y divide-white sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
             {actions.map((action, actionIdx) => (
