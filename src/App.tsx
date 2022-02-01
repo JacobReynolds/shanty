@@ -55,8 +55,8 @@ const actions = [
     href: "#",
     icon: EyeIcon,
     description: "We'll start. We spy with our little eyes, something…pink. (Too dark to see? Then we spy with our little eyes something twinkling and far away…)",
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
+    iconForeground: "text-orange-700",
+    iconBackground: "bg-orange-50",
   },
   {
     id: 7,
@@ -64,8 +64,8 @@ const actions = [
     href: "#",
     icon: CakeIcon,
     description: "Nothing says “winter” like some hot food! One of our awesome sponsors, ChowGirls, has provided food for tonight's event. Make sure you grab some from the Welcome Shanty!",
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
+    iconForeground: "text-teal-700",
+    iconBackground: "bg-teal-50",
   },
   {
     id: 8,
@@ -73,8 +73,8 @@ const actions = [
     href: "#",
     icon: LightningBoltIcon,
     description: "Don't worry, the cracks and pops are normal! The ice is plenty thick for all the shanties, people, and fun we have out here. We like to think the ice is talking to us. What do you think it's saying?",
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
+    iconForeground: "text-blue-700",
+    iconBackground: "bg-blue-50",
   },
   {
     id: 9,
@@ -91,8 +91,8 @@ const actions = [
     href: "#",
     icon: EmojiHappyIcon,
     description: "Not to brag, but we have live music on the ice tonight, if you want some music to dance to. Otherwise, just dance it out wherever you are.",
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
+    iconForeground: "text-red-700",
+    iconBackground: "bg-red-50",
   },
 ];
 function App() {
