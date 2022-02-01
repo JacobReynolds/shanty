@@ -6,57 +6,91 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const actions = [
   {
     id: 1,
-    title: "Find the first location of the shanty",
+    title: "Take a stroll around the shanty village.",
     href: "#",
     icon: ClockIcon,
-    description: "Cupcake ipsum dolor sit amet muffin caramels soufflé liquorice. Topping halvah pudding sugar plum powder ice cream.",
+    description: "Did you know we have 18 shanties this year? All our shanty artists and performers are paid for their work, and members like you help us do that! Thanks for your support!",
     iconForeground: "text-teal-700",
     iconBackground: "bg-teal-50",
   },
   {
     id: 2,
-    title: "Go to the coolest booth",
+    title: "Grab a hot drink for the rest of your exploration.",
     href: "#",
     icon: BadgeCheckIcon,
-    description: "Jelly-o sesame snaps gingerbread candy canes marshmallow pudding. Candy sesame snaps candy.",
+    description: "The Welcome Shanty has hot cocoa and tea available for you. (Feel free to use a reusable mug if you brought one. Forget yours and want one? Members get 10% off our merch, including our awesome camp mug. Don't need a new mug? We have compostable cups available.)",
     iconForeground: "text-purple-700",
     iconBackground: "bg-purple-50",
   },
   {
     id: 3,
-    title: "Meet a stranger",
+    title: "Visit your favorite shanty.",
     href: "#",
     icon: UsersIcon,
-    description:
-      "Lemon drops donut carrot cake dragée chocolate lemon drops. Sugar plum jelly-o cupcake caramels cake chocolate cake gummies. Candy pie icing dessert gingerbread dragée.",
+    description:"With 18 shanties, there’s no shortage of fun or activities for you to do. What shanty is your favorite? Why? How would you describe it to an extraterrestrial from another planet?",
     iconForeground: "text-sky-700",
     iconBackground: "bg-sky-50",
   },
   {
     id: 4,
-    title: "Shake someone's hand",
+    title: "Meet a stranger.",
     href: "#",
     icon: CashIcon,
-    description:
-      "Liquorice tootsie roll powder apple pie bonbon dessert sugar plum. Cheesecake dessert pie muffin chocolate bar jelly beans shortbread jelly-o cotton candy. ",
-    iconForeground: "text-yellow-700",
+    description:"We always say that the people are one of the best parts of the Art Shanty Projects. Introduce yourself to one of the artists, staff, members, or volunteers and meet someone awesome. What’s their name? What’s their favorite shanty? What’s their secret talent?",
+        iconForeground: "text-yellow-700",
     iconBackground: "bg-yellow-50",
   },
   {
     id: 5,
-    title: "Have a dance party",
+    title: "Warm your fingers and toes at the fire.",
     href: "#",
     icon: ReceiptRefundIcon,
-    description: "Jelly-o cotton candy pudding chupa chups cookie muffin. Apple pie chupa chups sesame snaps jujubes caramels croissant marshmallow.",
+    description: "We have a couple fire pits available to keep you warm tonight! Feel free to sit down at any time. Need extra warmth? Top up on your hot drink at the Welcome Shanty any time.",
     iconForeground: "text-rose-700",
     iconBackground: "bg-rose-50",
   },
   {
     id: 6,
-    title: "Pick up a piece of trash",
+    title: "Play “I Spy.”",
     href: "#",
     icon: AcademicCapIcon,
-    description: "Jujubes dessert ice cream dessert candy canes tootsie roll topping apple pie chocolate bar. Donut lemon.",
+    description: "We’ll start. We spy with our little eyes, something…pink. (Too dark to see? Then we spy with our little eyes something twinkling and far away…)",
+    iconForeground: "text-indigo-700",
+    iconBackground: "bg-indigo-50",
+  },
+  {
+    id: 7,
+    title: "Grab a bite to eat.",
+    href: "#",
+    icon: AcademicCapIcon,
+    description: "Nothing says “winter” like some hot food! One of our awesome sponsors, ChowGirls, has provided food for tonight’s event. Make sure you grab some from the Welcome Shanty!",
+    iconForeground: "text-indigo-700",
+    iconBackground: "bg-indigo-50",
+  },
+  {
+    id: 8,
+    title: "Listen to the ice.",
+    href: "#",
+    icon: AcademicCapIcon,
+    description: "Don’t worry, the cracks and pops are normal! The ice is plenty thick for all the shanties, people, and fun we have out here. We like to think the ice is talking to us. What do you think it’s saying?",
+    iconForeground: "text-indigo-700",
+    iconBackground: "bg-indigo-50",
+  },
+  {
+    id: 9,
+    title: "Plan your shanty or performance.",
+    href: "#",
+    icon: AcademicCapIcon,
+    description: "Now that you’re inspired by all the sights, smells, sounds, and tastes of the shanty village, it’s time to start dreaming. What shanty would you build if you were an artist? What performance would you put on if you were a performer?",
+    iconForeground: "text-indigo-700",
+    iconBackground: "bg-indigo-50",
+  },
+  {
+    id: 10,
+    title: "Have a dance party!",
+    href: "#",
+    icon: AcademicCapIcon,
+    description: "Not to brag, but we have live music on the ice tonight, if you want some music to dance to. Otherwise, just dance it out wherever you are.",
     iconForeground: "text-indigo-700",
     iconBackground: "bg-indigo-50",
   },
@@ -145,8 +179,8 @@ function App() {
         <div className="bg-white">
           <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <div className="text-center">
-              <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Think you're done?</p>
-              <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">Head back to the booth!</p>
+              <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Congratulations!</p>
+              <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">Thanks for joining us tonight for Member Night! We appreciate your support, and we couldn’t do this without you. We hope you had fun experiencing the ice in a new way, and we can’t wait to see you again soon.</p>
             </div>
           </div>
         </div>
